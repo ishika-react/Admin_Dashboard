@@ -1,0 +1,41 @@
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px  8px;
+  background-color: #1e1e2f;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 150%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-btn:hover {
+  color: #4caf50; /* hover color */
+}

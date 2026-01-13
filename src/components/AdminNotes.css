@@ -1,0 +1,189 @@
+/* AdminNotes.css */
+
+/* Page container */
+.admin-notes-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 700px; 
+}
+
+/* Page title */
+.admin-notes-page h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffdd59; /* Attractive golden color */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Note form container */
+/* Note form container */
+.note-form {
+  width: 100%;
+  max-width: 1000px; /* increased width */
+  background-color: #2c2c3e;
+  padding: 30px; /* more padding for spacious look */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* more gap between fields */
+  align-items: center;
+}
+
+/* Textarea */
+.note-form textarea {
+  background-color: #1f1f2e;
+  color: #ffffff;
+  min-height: 150px; /* increased height */
+  font-size: 18px;   /* slightly bigger font */
+  resize: vertical;  /* allow vertical resize if needed */
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+
+/* Select and input */
+.note-form select,
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Select dropdown */
+.note-form select {
+  background-color: #1f1f2e;
+  color: #ffffff;
+}
+
+/* Email input */
+.note-form input {
+  background-color: #1f1f2e;
+  color: #ffdd59;
+  font-weight: 500;
+}
+
+/* Textarea */
+.note-form textarea {
+  background-color: #1f1f2e;
+  color: #ffffff;
+  min-height: 100px;
+  resize: none;
+  font-size: 16px;
+}
+
+/* Save button */
+.note-form button {
+  background: linear-gradient(90deg, #ff6b6b, #f8e71c);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: #1f1f2e;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.note-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Notes history */
+.notes-history {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Notes history title */
+.notes-history h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffdd59;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Individual note item */
+.note-item {
+  background-color: #3b3b50;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.note-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 221, 89, 0.3);
+}
+
+/* Note text */
+.note-item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Note footer */
+.note-item span {
+  font-size: 14px;
+  color: #ffdd59;
+}
+
+.delete-note-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-note-btn:hover {
+  background: #ff7875;
+}
+
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .note-form, .notes-history {
+    width: 90%;
+  }
+
+  .admin-notes-page h2 {
+    font-size: 28px;
+  }
+
+  .note-form button {
+    font-size: 16px;
+  }
+
+  .note-item p {
+    font-size: 15px;
+  }
+}

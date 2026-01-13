@@ -1,0 +1,113 @@
+/* Fullscreen blurred background */
+.signup-popup-overlay {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glassmorphism card */
+.signup-popup-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title */
+.signup-popup-box h4 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.signup-popup-box label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #eaeaea;
+}
+
+/* Inputs */
+.signup-popup-box .form-control {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.signup-popup-box .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-popup-box .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Password toggle button */
+.signup-popup-box .btn-outline-secondary {
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.signup-popup-box .btn-outline-secondary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Primary button */
+.signup-popup-box .btn-success {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-popup-box .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+.signup-popup-box a {
+  color: #ffdd57;
+}
+
+.signup-popup-box a:hover {
+  text-decoration: underline;
+}
+
+/* Subtle fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-popup-box {
+    padding: 22px;
+  }
+}

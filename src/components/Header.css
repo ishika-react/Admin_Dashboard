@@ -1,0 +1,58 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.header-right {
+  display: flex;          /* 🔥 makes buttons side by side */
+  flex-direction: row;    /* 🔥 ensures horizontal layout */
+  align-items: center;
+  gap: 12px;  
+  margin-left: auto;  
+  margin-right: 70px;          /* 🔥 space between buttons */
+}
+
+.admin-greeting {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:first-child {
+  background-color: #2d7ef7; /* Logout */
+  color: white;
+}
+
+.logout-btn:last-child {
+  background-color: #d9534f; /* Signout */
+  color: white;
+}
+

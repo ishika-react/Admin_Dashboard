@@ -1,0 +1,20 @@
+.result-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.result-filter label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.result-filter select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
+

@@ -1,0 +1,105 @@
+.sidebar {
+  width: 70px;
+  min-height: 100vh;
+  background-color: #1f1f2e;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar.css */
+.sidebar {
+  width: 190px; /* make it wide enough for the table */
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar-table {
+  margin-top: 20px;
+  max-height: 60vh; /* adjust as needed */
+  overflow-y: auto;
+}
+
+/* Optional: make table inside sidebar smaller */
+.sidebar-table table {
+  width: 100%;
+  font-size: 12px;
+}
+
+
+.sidebar-header h2 {
+  color: #4fc3f7;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #bbbbbb;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-section ul li {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-section ul li:hover {
+  background-color: #33334d;
+}
+
+
+.custom-line {
+  border: none;
+  height: 2px;
+  width: calc(100% - 8px); /* if sidebar padding is 20px */
+  background: linear-gradient(to right, rgb(189, 225, 238), rgb(192, 227, 238));
+  margin: 10px 0; /* top & bottom spacing */
+}
+
+.sidebar-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.sidebar-link-btn:hover {
+  text-decoration: underline;
+}
+
+.sidebar-table {
+  margin-top: 10px;
+  max-height: 60vh; /* scrollable if too tall */
+  overflow-y: auto;
+}
+
+/* optional: make table inside sidebar smaller */
+.sidebar-table table {
+  width: 100%;
+  font-size: 12px;
+}
+
+
+
